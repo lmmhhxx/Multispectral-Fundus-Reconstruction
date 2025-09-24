@@ -1,6 +1,6 @@
 # Multispectral Fundus Reconstruction
 
-This repository provides an implementation of multispectral fundus image reconstruction using a pretrained MST++ (Multi-Stage Spectral-wise Transformer) model. The model is designed to efficiently reconstruct high-spectral-resolution data from standard RGB fundus images, particularly suitable for medical imaging applications where non-invasive spectral acquisition is required.
+This repository provides an implementation of multispectral fundus image reconstruction using a pretrained MST++ (Multi-Stage Spectral-wise Transformer) model. Instead of relying on standard RGB fundus images, the model takes three representative spectral-band images as input and efficiently reconstructs high-spectral-resolution fundus data. This approach is particularly suitable for medical imaging applications where non-invasive spectral acquisition is required.
 
 ##  Model Description
 
@@ -51,5 +51,6 @@ python inference.py \
 The reconstructed images are saved in .bmp format in the test_output/ directory.
 
 Each output contains 7 grayscale channels, corresponding to the predicted multispectral bands.
+Reconstructing a 9-band multispectral image from a 3-channel grayscale input using a pre-trained model is the same as reconstructing a 7-band multispectral image from a 3-channel grayscale input, but it should be noted that the model and code in the 3to9 folder should be used.
 
 
