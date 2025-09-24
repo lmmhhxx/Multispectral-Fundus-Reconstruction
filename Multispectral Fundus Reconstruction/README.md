@@ -17,7 +17,7 @@ The dataset used in this project has been uploaded to Google Drive:
 The dataset contains `.bmp` images
 Accept 3-channel grayscale images as input     7：572nm  4：650nm  1：710nm
 Output 7-channel grayscale images           7：572nm   6：600nm  5：617nm  4：650nm  3：662nm  2：685nm  1：710nm
-
+Output 9-channel grayscale images          13：598nm 12：630nm 11：637nm 10：680nm 9：716nm 8：724nm 7：572nm 4：652nm 1：711nm
 License
 This code is released for academic research only. For commercial use, please contact the author.
 
@@ -51,3 +51,5 @@ python inference.py \
 The reconstructed images are saved in .bmp format in the test_output/ directory.
 
 Each output contains 7 grayscale channels, corresponding to the predicted multispectral bands.
+
+
